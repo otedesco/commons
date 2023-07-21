@@ -1,14 +1,10 @@
-import jwt, { SignOptions } from "jsonwebtoken";
+import { sign as JWTSign, SignOptions, verify as JWTVerify } from "jsonwebtoken";
 
-export function sign(
-  payload: object,
-  secretKey: string,
-  options?: SignOptions,
-): string | null {
+export function sign(payload: object, secretKey: string, options?: SignOptions): string | null {
   try {
     const key = Buffer.from(secretKey, "base64").toString("ascii");
 
-    return jwt.sign(payload, key, {
+    return JWTSign(payload, key, {
       ...(options && options),
       algorithm: "RS256",
     });
@@ -23,7 +19,7 @@ export function verify<T>(token: string | null, publicKey: string): T | null {
   try {
     const key = Buffer.from(publicKey, "base64").toString("ascii");
 
-    return jwt.verify(token, key) as T;
+    return JWTVerify(token, key) as T;
   } catch (error) {
     return null;
   }
