@@ -1,6 +1,14 @@
-import { sign as JWTSign, SignOptions, verify as JWTVerify } from "jsonwebtoken";
+import {
+  sign as JWTSign,
+  SignOptions,
+  verify as JWTVerify,
+} from "jsonwebtoken";
 
-export function sign(payload: object, secretKey: string, options?: SignOptions): string | null {
+export function sign(
+  payload: object,
+  secretKey: string,
+  options?: SignOptions,
+): string | null {
   try {
     const key = Buffer.from(secretKey, "base64").toString("ascii");
 
