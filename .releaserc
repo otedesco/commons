@@ -21,7 +21,7 @@
           "./CHANGELOG.md",
           "./package.json"
         ],
-        "message": "release(version): Release server-utils ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        "message": "release(version): Release commons ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
     [
