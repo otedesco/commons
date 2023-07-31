@@ -2,9 +2,12 @@
   "version": "0.1",
   "language": "en",
   "words": [
+    "commons",
+    "conventionalcommits",
     "degit",
     "esbuild",
-    "commons",
+    "execa",
+    "npmlog",
     "octocat",
     "rmrf",
     "socio"
