@@ -1,5 +1,11 @@
 # @otedesco/commons
 
+## 0.0.2
+
+### Patch Changes
+
+- [#3](https://github.com/otedesco/commons/pull/3) [`31f9aaa`](https://github.com/otedesco/commons/commit/31f9aaae328e2049d11ba6fd77e807f26f4d741c) Thanks [@otedesco](https://github.com/otedesco)! - fix release script
+
 ## 0.0.1
 
 ### Patch Changes
