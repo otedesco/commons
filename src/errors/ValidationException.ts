@@ -1,7 +1,7 @@
 import _ from "lodash";
 
 import { ValidationError } from "./Errors";
-import type { CustomError } from "./interfaces/CustomError";
+import { CustomError } from "./interfaces/CustomError";
 
 const DEFAULT_KEYWORD = "error";
 
@@ -20,9 +20,11 @@ const createFromDataPath = (error: any) => {
 };
 
 const createFromKeyword = ({ params, message }: any) => {
-  const messageWithKey = Object.values(params as Record<string, unknown>).reduce(
+  const messageWithKey = Object.values(
+    params as Record<string, unknown>,
+  ).reduce(
     (msg, value) => `${msg as string}${value as string}: ${message};`,
-    ""
+    "",
   );
 
   return { message: messageWithKey, data: {} };
@@ -32,7 +34,10 @@ const mapErrors = (errors: any[], code: string) =>
   errors.reduce((arrayResult, error) => {
     const { instancePath } = error;
 
-    const errorObj = !instancePath || instancePath === "" ? createFromKeyword(error) : createFromDataPath(error);
+    const errorObj =
+      !instancePath || instancePath === ""
+        ? createFromKeyword(error)
+        : createFromDataPath(error);
 
     return [...arrayResult, { code, ...errorObj }];
   }, []);
@@ -47,7 +52,11 @@ export class ValidationException extends Error implements CustomError {
   public validationErrors: any[];
 
   constructor(properties?: { status?: 400; code?: string; errors?: any[] }) {
-    const { status = 400, code = ValidationError.code, errors = [] } = properties || {};
+    const {
+      status = 400,
+      code = ValidationError.code,
+      errors = [],
+    } = properties || {};
     super(ValidationError.code);
     this.status = status;
     this.code = code;

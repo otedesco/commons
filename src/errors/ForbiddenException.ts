@@ -1,5 +1,5 @@
 import { ForbiddenError } from "./Errors";
-import type { CustomError } from "./interfaces/CustomError";
+import { CustomError } from "./interfaces/CustomError";
 
 export class ForbiddenException extends Error implements CustomError {
   public status: number;
