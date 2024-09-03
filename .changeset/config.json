@@ -6,7 +6,12 @@
       "repo": "otedesco/commons"
     }
   ],
-  "commit": true,
+  "commit": [
+    "@changesets/cli/commit",
+    {
+      "skipCI": false
+    }
+  ],
   "fixed": [],
   "linked": [],
   "access": "public",

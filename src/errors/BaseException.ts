@@ -1,4 +1,4 @@
-import { CustomError } from "./interfaces/CustomError";
+import type { CustomError } from "./interfaces/CustomError";
 
 export class BaseException extends Error implements CustomError {
   public code: string;
@@ -7,18 +7,8 @@ export class BaseException extends Error implements CustomError {
 
   public data: object;
 
-  constructor(properties: {
-    message: string;
-    status?: number;
-    data?: object;
-    code?: string;
-  }) {
-    const {
-      message = "Error",
-      status = 400,
-      code = "",
-      data = {},
-    } = properties;
+  constructor(properties: { message: string; status?: number; data?: object; code?: string }) {
+    const { message = "Error", status = 400, code = "", data = {} } = properties;
     super(message);
     this.status = status;
     this.code = code;

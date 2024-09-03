@@ -21,8 +21,8 @@ export abstract class BaseModel extends DBErrors(Model) {
   }
 
   static getTableName() {
-    return this.tableName;
+    return BaseModel.tableName;
   }
 }
 
-export { ModelObject } from "objection";
+export type { ModelObject } from "objection";
