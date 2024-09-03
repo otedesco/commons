@@ -1,5 +1,11 @@
 # @otedesco/commons
 
+## 0.0.4
+
+### Patch Changes
+
+- [#9](https://github.com/otedesco/commons/pull/9) [`93759e8`](https://github.com/otedesco/commons/commit/93759e82149968cafd37e6ab64c693813c40f89e) Thanks [@otedesco](https://github.com/otedesco)! - fix objection model and rollback format
+
 ## 0.0.3
 
 ### Patch Changes
