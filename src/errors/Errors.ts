@@ -20,7 +20,7 @@ export const ResourceNotFoundError = {
 
 export const NotNullError = {
   message: "Columns {{columns}} of table {{table}} should not be null",
-  code: "NOT_NULL_ERROR_400",
+  code: "NOT_NULL_ERROR",
 };
 
 export const InternalServerError = {
@@ -29,8 +29,9 @@ export const InternalServerError = {
 };
 
 export const UniqueViolatedError = {
-  message: "Unique violation {{constraint}} on table {{table}} violated. Columns involved {{columns}}",
-  code: "UNIQUE_VIOLATION_ERROR_400",
+  message:
+    "Unique violation {{constraint}} on table {{table}} violated. Columns involved {{columns}}",
+  code: "004_unique_violation_error",
 };
 
 export const EncryptionError = ValidationError;
