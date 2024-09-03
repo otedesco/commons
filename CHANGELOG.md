@@ -1,5 +1,13 @@
 # @otedesco/commons
 
+## 0.0.3
+
+### Patch Changes
+
+- [#7](https://github.com/otedesco/commons/pull/7) [`83d260e`](https://github.com/otedesco/commons/commit/83d260e5c47117ac17f5980c79c09c4f6fd4e70a) Thanks [@otedesco](https://github.com/otedesco)! - format code
+
+- [#7](https://github.com/otedesco/commons/pull/7) [`4d90fd0`](https://github.com/otedesco/commons/commit/4d90fd03dce0f302835f5be39cf5c9b971e08858) Thanks [@otedesco](https://github.com/otedesco)! - Automate release process
+
 ## 0.0.2
 
 ### Patch Changes
