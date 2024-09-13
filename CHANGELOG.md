@@ -1,5 +1,11 @@
 # @otedesco/commons
 
+## 0.0.5
+
+### Patch Changes
+
+- [#11](https://github.com/otedesco/commons/pull/11) [`18e11f2`](https://github.com/otedesco/commons/commit/18e11f24dc41ce9994754339ecaac81e21be5af6) Thanks [@otedesco](https://github.com/otedesco)! - centralize gh wf
+
 ## 0.0.4
 
 ### Patch Changes
