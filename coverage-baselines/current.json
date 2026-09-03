@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "repository": "commons",
+  "commit": "d30a4b9648d73776e580b7d60e28e537f2fad1a7",
+  "timestamp": "2026-09-03T00:00:00Z",
+  "metrics": {
+    "statements": { "covered": 132, "total": 375, "percent": 35.199999999999996 },
+    "branches": { "covered": 8, "total": 17, "percent": 47.05882352941176 },
+    "functions": { "covered": 7, "total": 16, "percent": 43.75 },
+    "lines": { "covered": 132, "total": 375, "percent": 35.199999999999996 }
+  }
+}
